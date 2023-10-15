@@ -1,0 +1,507 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+.MainContainer {
+    /* display: flex; */
+    width: 80%;
+    max-width:1300px;
+    margin: auto;
+    position: relative;
+}
+.pageContent_ecefc8ba,.t_e_8474018e,.aq_l_8474018e{
+    max-width: 1500px;
+}
+
+/* CSS for Loading */
+.LaodingMain{
+    margin:0;
+    padding:0;
+    font-family: montserrat;
+    background: black;
+}
+.centerLoader{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.ring{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+}
+@keyframes ring{
+    0%{
+        transform:rotate(0deg);
+        box-shadow: 1px 5px 2px #e65c00;
+    }
+    50%{
+        transform:rotate(180deg);
+        box-shadow: 1px 5px 2px #18b201;
+    }
+    100%{
+        transform:rotate(360deg);
+        box-shadow: 1px 5px 2px #0456c8;
+    }
+}
+.ring:before{
+    position: absolute;
+    content: '';
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255,255,255,.3);
+}
+.loadingSpan{
+    color:#737373;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 200px;
+    animation: text 3s ease-in-out infinite;
+}
+@keyframes text{
+    50%{
+        color:black;
+    }
+}
+
+
+/* ------------------------ */
+/* this code of marquee we can add for future purpose, currently commented */
+/* .BreakingNewsContainer1{
+    display: flex;
+}
+.marquee {
+
+	line-height: 10px;
+	color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 85%
+}
+.BreakingNewsTitle {
+    width: 15%;
+    text-align: center;
+    font-style: italic;
+    background: wheat;
+    padding: 6px 0;
+}
+.marquee div {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 30s linear infinite;
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+} */
+
+/* finish marquee code */
+
+.RightContainer {
+    /* max-width: 1000px; */
+    width: 100%;
+    position: absolute;
+    left: -1%;
+    /* margin-left: 20px; */
+}
+
+.RightContainerMain {
+    display: flex;
+    width: 100%;
+    margin-top: 1%;    
+}
+
+.flexCss{
+    display: flex;
+}
+
+.RightContainerLeft {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F7;
+}
+
+.newsClass {
+    width: 96%;
+    margin-left: 2%;
+    height: 270px;
+}
+.marginright10{
+    margin-right: 10px;
+}
+
+.marginleft10{
+    margin-left: 10px;
+}
+
+.PositionRelative{
+    position: relative;
+}
+
+.cardImagewithContent{
+    position: relative;
+    margin-bottom: 2%;
+}
+.cardContent{
+    width: 96%;
+    margin-left: 2%;
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+}
+.cardContentHeader{
+    left:0%;
+}
+.left1{
+    left:1%;
+}
+.cardContent p{
+    color: white;
+    font-size: 17px;
+}
+
+.NewsContainerClass .Image-Icon,.CompanyUpdateClass .PositionRelative .Image-Icon{
+    width: 35px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.RightContainerRight {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #F5F5F7;
+    margin-left: 15px;
+    width: 66%;
+}
+.RightContainerRight .RightContent{
+    width: 50%;
+}
+
+.RightContainerMain .RightContainerLeft p {
+    flex-grow: 1;
+}
+
+.NewsContainerClass figure:first-child{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.NewsSeeAllClass {
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 3%;
+}
+
+.NewsSeeAllClass div {
+    flex-grow: 1;
+    margin: 10px 0 0 0;
+    color: #a56f0ce3;
+    font-weight: 640;
+}
+.NewsSeeAllClass a {
+    color: #259cd7e3;
+    font-weight: 640;
+    margin: 10px 0 0 0;
+}
+
+
+a{
+    cursor:pointer!important;
+}
+.CEODeskClassMain {
+    height: auto;
+    width: 100%;            
+    background: linear-gradient(to right,rgb(1, 1, 47), rgb(58 156 206),rgb(192 137 46));
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.TextSection {
+    width: 35%;
+    flex-grow: 0.3;
+    text-align: center;
+    position: relative;
+}
+.TextSection div{
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+.VideoSection {
+    width: 62%;
+}
+.VideoSection .NewsContainerClass{
+    width: 100%;
+}
+.VideoSection .NewsContainerClass .PositionRelative{
+    width: 50%;
+}
+.marginAuto {
+    margin: auto 0
+}
+.PremovePaddingFromTop{
+    text-align: right;
+    margin-top: 3px;
+    padding-top: 0;
+    /* margin-left: 10%; */
+}
+.PremovePaddingFromBottom{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.whiteColor{
+    color: rgb(238, 231, 231);
+}
+
+.imageLinksMiddle{
+    width: 100%;
+    background: #F5F5F7;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    margin: auto;
+    margin-top: 1%;
+}
+.middle-Navigation-image{
+    width: 100px;
+    height: 55px;
+    margin: auto;
+    background: white;
+    padding: 12px;
+    object-fit: scale-down;
+}
+.middle-Navigation-image-anchor{
+    margin:auto;
+}
+/* Delete by Gautam Rajput */
+
+body,.a_c_50a7110f.a_c_50a7110f{
+	background-color: #0e2453!important;
+}
+.CanvasZone--alignment {
+    background: #0e2453!important;
+}
+.accordContainer{
+	display:none!important;
+}
+.bottomLeft{
+	visibility: hidden!important;
+}
+
+
+/* this section of code is for New News */
+.news-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: "Roboto", sans-serif;
+    box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.3);
+}
+
+.news-container .title {
+    position: absolute;
+    background: #df2020;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    color: white;
+    font-weight: bold;
+    z-index: 200;
+}
+
+.news-container ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    animation: scroll 25s infinite linear;
+}
+
+.news-container ul li {
+    white-space: nowrap;
+    padding: 10px 24px;
+    color: #494949;
+    position: relative;
+}
+
+.news-container ul li::after {
+    content:"";
+    width: 1px;
+    height: 100%;
+    background: #b8b8b8;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.news-container ul li:last-child::after {
+    display: none;
+}
+
+.BreakingNewsContainer{
+    background: white;
+    display: flex;
+}
+.BreakingNewsTitle{
+    width: 135px;
+    text-align: center;
+    font-style: italic;
+    background: wheat;
+    padding: 6px 0px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-1083px);
+
+    }
+}
+/* end New */
+
+@media screen and (max-width: 1350px) {
+    .middle-Navigation-image{
+        width: 90px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .TextSection>div{
+        font-size: 10px;
+    } 
+    .TextSection>div>h3{
+        font-size: 14px;
+    } 
+    .TextSection>img{
+        width: 100%;
+    } 
+    .headerNewsClass{
+        height: 230px;
+    }
+    .middle-Navigation-image{
+        width: 80px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .middle-Navigation-image{
+        width: 70px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .RightContainerMain{
+        display: block;
+    }
+    .RightContainerLeft {
+        width: 100%;
+        background-color: #f5f5f7;
+    }
+    .NewsSeeAllClass>a{
+        width: 7%;
+    }
+    .NewsSeeAllClass>a.companySeeAll{
+        width:15%;
+    }
+    .NewsContainerClass{
+        display: flex;
+        width: 100%;
+    }
+    .NewsContainerClass>a{
+        width: 33%;
+    }
+    .headerNewsClass{
+        height: 200px;
+    }
+    .TextSection {
+        width: 50%;
+        margin: auto;
+    }
+    .TextSection>img,.VideoSection{
+        width:100%
+    }
+    .RightContainerRight{
+        width:100%;
+        margin-left: 0px;
+        margin-top: 1.5%;
+    }
+    .newsClassRes{
+        height: 240px;
+    }
+    .companynewsAll{
+        width:20%;
+    }
+    .middle-Navigation-image{
+        width: 60px;
+        padding: 8px;
+    }   
+}
+
+@media screen and (max-width: 900px) {
+    .middle-Navigation-image{
+        width: 50px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .middle-Navigation-image{
+        width: 40px;
+        padding: 7px;
+    }
+    .newsClassRes{
+        height: 180px;
+    }
+    .MainContainer {
+        width: 100%;
+    }
+    .TextSection>div{
+        font-size: 15px;
+    } 
+    .TextSection>div>h3{
+        font-size: 19px;
+    } 
+    .newsClass{
+        height: 180px;
+    }
+    .NewsSeeAllClass>a {
+        width: 9%;
+    }    
+    .NewsSeeAllClass>a.companySeeAll{
+        width:16%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .middle-Navigation-image{
+        width: 30px;
+    }
+    .NewsSeeAllClass>a.companySeeAll{
+        width:25%;
+    }
+    .TextSection>div{
+        width: 50%;
+    }
+}
